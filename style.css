@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: url(images/home-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0.5rem 1rem lightgrey;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.header-items a {
+  /* height: 40px; */
+  display: flex;
+  font-size: 1.5rem;
+  color: grey;
+  padding: 20px;
+  justify-self: center;
+}
+
+.item2 a:hover {
+  /* font-size: 1.7rem; */
+  color: orange;
+}
+
+.header-items a i {
+  margin-right: 8px;
+  color: red;
+}
+
+.item2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item2 a {
+  text-decoration: none;
+}
+
+.item1:hover{
+  cursor: pointer;
+}
+
+.main-div {
+  padding-left: 10%;
+  max-width: 55%;
+}
+
+
+.heading {
+  margin-top: 10%;
+  font-size: 4.5rem;
+  font-weight: bolder;
+}
+
+.button {
+  margin-top: 5%;
+}
+
+.order-button {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.order-button:hover {
+  background-color: red;
+  color: white;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.div-flex {
+  display: flex;
+  align-items: center;
+}
+
+.div-image {
+  margin-right: 15rem;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.burger-image {
+  height: 20rem;
+  width: 25rem;
+}
+
+@keyframes bounce{
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .div-image {
+    margin-right: 5rem;
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .burger-image {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .main-div {
+    padding-left: 5%;
+    max-width: 50%;
+  }
+}
